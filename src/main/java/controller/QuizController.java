@@ -4,6 +4,7 @@ import QuestionData.MCQ;
 import QuestionData.Question;
 import QuestionData.SA;
 import QuestionData.TF;
+import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,6 +17,7 @@ import java.util.Random;
  */
 public class QuizController {
 
+    Logger logger=Logger.getLogger(QuizController.class);
     private final String tf = "TF";
     private final String mc = "MC";
     private final String sa = "SA";
@@ -29,6 +31,7 @@ public class QuizController {
         FileReader fr = new FileReader(file);
         br = new BufferedReader(fr);
         obj = openFile();
+        logger.info("File Opened Successfully");
         randoms = new boolean[obj.size()];
     }
 
@@ -58,10 +61,12 @@ public class QuizController {
             String[] choice = br.readLine().split(" ");
             int points = Integer.parseInt(choice[1]);
             String question = br.readLine();
+            logger.info("Question : "+question);
             Question obj;
             switch (choice[0]) {
                 case tf:
                     String answertf = br.readLine().toUpperCase();
+                    logger.info("Answer : "+answertf);
                     TF tfstore = new TF(question, answertf, points);
                     obj = new Question(tfstore, tf);
                     data.add(obj);
@@ -77,12 +82,14 @@ public class QuizController {
                             i++;
                     }
                     String answerMCQ = br.readLine().toUpperCase();
+                    logger.info("Answer : "+answerMCQ);
                     MCQ mcq = new MCQ(question, answerMCQ, choices, points);
                     obj = new Question(mcq, mc);
                     data.add(obj);
                     break;
                 case sa:
                     String answerSA = br.readLine().toUpperCase();
+                    logger.info("Answer : "+answerSA);
                     SA sastore = new SA(question, answerSA, points);
                     obj = new Question(sastore, sa);
                     data.add(obj);

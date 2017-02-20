@@ -1,34 +1,13 @@
-DEBUG   2017-02-20 18:23:06,746 [main] model.Question  - Answer E this.answer null
-DEBUG   2017-02-20 18:23:10,392 [main] model.Question  - Answer true this.answer true
-DEBUG   2017-02-20 18:23:13,800 [main] model.Question  - Answer Athens this.answer Athens
-DEBUG   2017-02-20 18:28:23,599 [main] model.Question  - Answer E) this.answer null
-DEBUG   2017-02-20 18:29:12,566 [main] model.Question  - Answer true this.answer true
-DEBUG   2017-02-20 18:29:16,477 [main] model.Question  - Answer Athens this.answer Athens
-DEBUG   2017-02-20 18:29:18,573 [main] model.Question  - Answer E this.answer null
-DEBUG   2017-02-20 18:29:59,790 [main] model.Question  - Answer Athens this.answer Athens
-DEBUG   2017-02-20 18:30:02,000 [main] model.Question  - Answer true this.answer true
-DEBUG   2017-02-20 18:30:03,549 [main] model.Question  - Answer E this.answer null
-DEBUG   2017-02-20 18:40:11,025 [main] model.Question  - Answer true this.answer true
-DEBUG   2017-02-20 18:40:14,984 [main] model.Question  - Answer Athens this.answer Athens
-DEBUG   2017-02-20 18:40:16,609 [main] model.Question  - Answer E this.answer null
-DEBUG   2017-02-20 18:43:59,328 [main] model.Question  - Answer true this.answer true
-DEBUG   2017-02-20 18:44:00,903 [main] model.Question  - Answer E this.answer null
-DEBUG   2017-02-20 18:44:54,855 [main] model.Question  - Answer A this.answer Athens
-DEBUG   2017-02-20 18:48:55,542 [main] model.Question  - Answer E this.answer null
-DEBUG   2017-02-20 18:51:24,558 [main] model.Question  - Answer E this.answer null
-DEBUG   2017-02-20 18:52:34,652 [main] model.Question  - Answer true this.answer true
-DEBUG   2017-02-20 18:52:38,876 [main] model.Question  - Answer Athens this.answer Athens
-DEBUG   2017-02-20 18:52:40,492 [main] model.Question  - Answer E this.answer E
-DEBUG   2017-02-20 18:53:12,804 [main] model.Question  - Answer Athens this.answer Athens
-DEBUG   2017-02-20 18:53:21,892 [main] model.Question  - Answer E this.answer E
-DEBUG   2017-02-20 18:53:53,588 [main] model.Question  - Answer Athens this.answer Athens
-DEBUG   2017-02-20 19:01:49,688 [main] model.Question  - Answer Athens this.answer Athens
-DEBUG   2017-02-20 19:01:52,367 [main] model.Question  - Answer E this.answer E
-DEBUG   2017-02-20 19:01:55,967 [main] model.Question  - Answer false this.answer true
-DEBUG   2017-02-20 19:04:41,952 [main] model.Question  - Answer E this.answer E
-DEBUG   2017-02-20 19:04:47,078 [main] model.Question  - Answer ATHENS this.answer ATHENS
-DEBUG   2017-02-20 19:04:50,254 [main] model.Question  - Answer TRUE this.answer TRUE
-DEBUG   2017-02-20 19:05:47,696 [main] model.Question  - Answer E this.answer E
-DEBUG   2017-02-20 19:06:33,655 [main] model.Question  - Answer SKIP this.answer ATHENS
-DEBUG   2017-02-20 19:07:33,614 [main] model.Question  - Answer E this.answer E
-DEBUG   2017-02-20 19:07:36,276 [main] model.Question  - Answer TRUE this.answer TRUE
+INFO    2017-02-20 19:23:53,449 [main] controller.QuizController  - Question : There exist birds that can not fly. (true/false)
+INFO    2017-02-20 19:23:53,451 [main] controller.QuizController  - Answer : TRUE
+INFO    2017-02-20 19:23:53,452 [main] controller.QuizController  - Question : Who was the president of the USA in 1991?
+INFO    2017-02-20 19:23:53,452 [main] controller.QuizController  - Answer : E
+INFO    2017-02-20 19:23:53,453 [main] controller.QuizController  - Question : What city hosted the 2004 Summer Olympics?
+INFO    2017-02-20 19:23:53,453 [main] controller.QuizController  - Answer : ATHENS
+INFO    2017-02-20 19:23:53,453 [main] controller.QuizController  - File Opened Successfully
+INFO    2017-02-20 19:23:54,823 [main] QuizBowlApp  - In Short Answer Type Question
+DEBUG   2017-02-20 19:23:58,271 [main] QuizBowlApp  - SA Points : 20
+INFO    2017-02-20 19:23:58,271 [main] QuizBowlApp  - In True False Type Question
+INFO    2017-02-20 19:24:04,575 [main] QuizBowlApp  - In MCQ Type Question
+DEBUG   2017-02-20 19:24:06,630 [main] QuizBowlApp  - MCQ Points : 30
+INFO    2017-02-20 19:24:06,631 [main] DisplayScore  - Player Name : ROHINIPoints : 30

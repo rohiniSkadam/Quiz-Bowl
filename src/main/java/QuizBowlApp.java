@@ -50,11 +50,11 @@ public class QuizBowlApp {
     void getInput() throws Exception {
         br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("First Name : ");
-        String fname = br.readLine();
+        String fname = br.readLine().toUpperCase();
         System.out.print("Last Name : ");
-        String lname = br.readLine();
+        String lname = br.readLine().toUpperCase();
         System.out.print("Filename : ");
-        String filename = br.readLine();
+        String filename = br.readLine().toLowerCase();
         player = new Player(lname, fname);
         filedriver = new QuizController(filename);
     }
@@ -63,7 +63,6 @@ public class QuizBowlApp {
         Question object;
         String answer;
         while (questionnumbers-- > 0) {
-            answer = null;
             object = filedriver.getRandomQuestion();
             System.out.println(object.getType());
             switch (object.getType()) {
@@ -71,8 +70,8 @@ public class QuizBowlApp {
                     TF tfstore = (TF) object.getQuestion();
                     QuestionTF tfobj = new QuestionTF(tfstore);
                     System.out.println(tfobj.getQuestion());
-                    answer =br.readLine();
-                    if (answer.equals("skip"))
+                    answer =br.readLine().toUpperCase();
+                    if (answer.equals("SKIP"))
                         break;
                     if (tfobj.checkAnswer(answer, tfstore.getPoints())) {
                         player.setPoints(tfobj.getPoints());
@@ -81,7 +80,6 @@ public class QuizBowlApp {
                         player.setPoints(tfobj.getPoints());
                         System.out.println("Wrong Answer.. \nPoints Lose : "+tfobj.getPoints()+"\n");
                     }
-                    object = null;
                     break;
                 case mc:
                     MCQ mcqstore = (MCQ) object.getQuestion();
@@ -90,8 +88,8 @@ public class QuizBowlApp {
                     String[] choices = mcqstore.getChoices();
                     for (String val : choices)
                         System.out.println(val);
-                    answer = br.readLine();
-                    if (answer.equals("skip"))
+                    answer = br.readLine().toUpperCase();
+                    if (answer.equals("SKIP"))
                         break;
                     if (mcqobj.checkAnswer(answer, mcqstore.getPoints())) {
                         player.setPoints(mcqobj.getPoints());
@@ -100,14 +98,13 @@ public class QuizBowlApp {
                         player.setPoints(mcqobj.getPoints());
                         System.out.println("Wrong Answer.. \nPoints Lose : "+mcqobj.getPoints()+"\n");
                     }
-                    object = null;
                     break;
                 case sa:
                     SA sastore = (SA) object.getQuestion();
                     QuestionSA saobj = new QuestionSA(sastore);
                     System.out.println(saobj.getQuestion());
-                    answer = br.readLine();;
-                    if (answer.equals("skip"))
+                    answer = br.readLine().toUpperCase();
+                    if (answer.equals("SKIP"))
                         break;
                     if (saobj.checkAnswer(answer, sastore.getPoints())) {
                         player.setPoints(saobj.getPoints());
@@ -115,9 +112,7 @@ public class QuizBowlApp {
                     } else {
                         player.setPoints(saobj.getPoints());
                         System.out.println("Wrong Answer.. \nPoints Lose : "+saobj.getPoints()+"\n");
-
                     }
-                    object = null;
                     break;
             }
         }

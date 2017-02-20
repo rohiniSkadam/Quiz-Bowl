@@ -16,9 +16,9 @@ import java.util.Random;
  */
 public class QuizController {
 
-    private static final String tf = "TF";
-    private static final String mc = "MC";
-    private static final String sa = "SA";
+    private final String tf = "TF";
+    private final String mc = "MC";
+    private final String sa = "SA";
     public ArrayList<Question> obj = new ArrayList<>();
     public boolean[] randoms=null;
     private BufferedReader br;
@@ -61,7 +61,7 @@ public class QuizController {
             Question obj;
             switch (choice[0]) {
                 case tf:
-                    String answertf = br.readLine();
+                    String answertf = br.readLine().toUpperCase();
                     TF tfstore = new TF(question, answertf, points);
                     obj = new Question(tfstore, tf);
                     data.add(obj);
@@ -71,18 +71,18 @@ public class QuizController {
                     String[] choices = new String[ChoiceNumber];
                     int i = 0;
                     char ch='A';
-                    while (ChoiceNumber-- > 0 && ch<='I') {
+                    while (ChoiceNumber-- > 0) {
                             choices[i] = ch+") "+br.readLine();
                             ch++;
                             i++;
                     }
-                    String answerMCQ = br.readLine();
+                    String answerMCQ = br.readLine().toUpperCase();
                     MCQ mcq = new MCQ(question, answerMCQ, choices, points);
                     obj = new Question(mcq, mc);
                     data.add(obj);
                     break;
                 case sa:
-                    String answerSA = br.readLine();
+                    String answerSA = br.readLine().toUpperCase();
                     SA sastore = new SA(question, answerSA, points);
                     obj = new Question(sastore, sa);
                     data.add(obj);

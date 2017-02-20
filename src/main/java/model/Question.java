@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
  */
 public abstract class Question {
 
+    Logger logger=Logger.getLogger(Question.class);
     private String question, questionType, answer;
     private int points = 0;
 
@@ -16,7 +17,7 @@ public abstract class Question {
     }
 
     public final Boolean checkAnswer(String answer, int points) {
-
+    logger.debug("Answer "+answer+" this.answer "+this.answer);
         if (answer.equals(this.answer)) {
             this.points = points;
             return true;
@@ -58,13 +59,4 @@ public abstract class Question {
         this.questionType = questionType;
     }
 
-    @Override
-    public String toString() {
-        return "Question{" +
-                "question='" + question + '\'' +
-                ", questionType='" + questionType + '\'' +
-                ", answer='" + answer + '\'' +
-                ", points=" + points +
-                '}';
-    }
 }

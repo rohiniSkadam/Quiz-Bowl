@@ -16,7 +16,7 @@ public class Question {
     public Question() {
     }
 
-    public final Boolean checkAnswer(String answer, int points) {
+    public Boolean checkAnswer(String answer, int points) {
         if (answer.equals(this.answer)) {
             this.points = points;
             return true;
@@ -25,7 +25,7 @@ public class Question {
         return false;
     }
 
-    public final String getQuestion() {
+    public  String getQuestion() {
         return this.question;
     }
 
@@ -33,7 +33,7 @@ public class Question {
         this.question = question;
     }
 
-    public final int getPoints() {
+    public  int getPoints() {
 
         return this.points;
     }
@@ -42,11 +42,11 @@ public class Question {
         this.points = points;
     }
 
-    public final String getAnswer() {
+    public  String getAnswer() {
         return this.answer;
     }
 
-    public final void setAnswer(String answer) {
+    public  void setAnswer(String answer) {
         this.answer = answer;
     }
 

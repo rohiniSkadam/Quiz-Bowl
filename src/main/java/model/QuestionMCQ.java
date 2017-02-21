@@ -15,4 +15,5 @@ public class QuestionMCQ extends Question {
         this.answer = object.getChoices();
         this.setAnswer(this.answer1);
     }
+
 }

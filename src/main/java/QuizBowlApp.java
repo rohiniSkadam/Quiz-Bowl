@@ -73,12 +73,12 @@ public class QuizBowlApp {
         do {
             System.out.print("How many questions would you like (out of 3)?  : ");
             int number = Integer.parseInt(br.readLine());
-            if (quizController.getQuestionCount() >= number && number > 0) {
+            if (quizController.getQuestionCount() >= number ) {
                 questionnumbers = number;
                 flag = false;
             } else {
                 flag = true;
-                System.out.println("Question count must be less than "+quizController.getQuestionCount()+" And greater than 0");
+                System.out.println("Question count must be less than "+quizController.getQuestionCount());
             }
         } while (flag);
         return true;

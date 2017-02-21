@@ -18,13 +18,14 @@ import java.io.InputStreamReader;
 public class QuizBowlApp {
 
     Logger logger = Logger.getLogger(QuizBowlApp.class);
-    private int questionnumbers;
+    private int questionNum;
     private BufferedReader br;
     private QuizController quizController;
     private Player player;
 
     /**
      * Main method that start calling other methods
+     *
      * @param args
      * @throws Exception
      */
@@ -34,7 +35,8 @@ public class QuizBowlApp {
     }
 
     /**
-     *  Function to take player information & input file name
+     * Function to take player information & input file name
+     *
      * @throws Exception
      */
     void getInput() throws Exception {
@@ -50,8 +52,9 @@ public class QuizBowlApp {
 
     /**
      * Function to initialize the player information & to start the quiz bowl
-     * @param fname - first name of player
-     * @param lname - last name of player
+     *
+     * @param fname    - first name of player
+     * @param lname    - last name of player
      * @param filename - name of file which contain questions & answers
      * @throws Exception
      */
@@ -65,6 +68,7 @@ public class QuizBowlApp {
 
     /**
      * Function to ask user that how many question he/she want to attend.
+     *
      * @return - return boolean flag
      * @throws IOException
      */
@@ -73,12 +77,12 @@ public class QuizBowlApp {
         do {
             System.out.print("How many questions would you like (out of 3)?  : ");
             int number = Integer.parseInt(br.readLine());
-            if (quizController.getQuestionCount() >= number ) {
-                questionnumbers = number;
+            if (quizController.getQuestionCount() >= number) {
+                questionNum = number;
                 flag = false;
             } else {
                 flag = true;
-                System.out.println("Question count must be less than "+quizController.getQuestionCount());
+                System.out.println("Question count must be less than " + quizController.getQuestionCount());
             }
         } while (flag);
         return true;
@@ -86,6 +90,7 @@ public class QuizBowlApp {
 
     /**
      * Function to start quiz & to call the display for player information
+     *
      * @throws Exception
      */
     void quizBowl() throws Exception {
@@ -93,10 +98,10 @@ public class QuizBowlApp {
         final String mc = "MC";
         final String tf = "TF";
         Question object;
-        while (questionnumbers-- > 0) {
+        while (questionNum-- > 0) {
             object = quizController.getRandomQuestion();
-            System.out.println(object.getType());
-            switch (object.getType()) {
+            System.out.println(object.getQuestionType());
+            switch (object.getQuestionType()) {
                 case tf:
                     checkTFQuestion(object);
                     break;
@@ -113,49 +118,53 @@ public class QuizBowlApp {
 
     /**
      * Function to get the True False type of question
+     *
      * @param object - object of type Question
      * @throws IOException
      */
     public void checkTFQuestion(Question object) throws IOException {
         logger.info("In True False Type Question");
-        TF tfstore = (TF) object.getQuestion();
-        QuestionTF tfobj = new QuestionTF(tfstore);
-        System.out.println("Points : " + ((TF) object.getQuestion()).getPoints() + "\n" + tfobj.getQuestion());
-        checkAnswerAndSetPoint(tfstore.getPoints(),tfobj);
+        TF tfData = (TF) object.getQuestion();
+        QuestionTF tfobj = new QuestionTF(tfData);
+        System.out.println("Points : " + ((TF) object.getQuestion()).getPoint() + "\n" + tfobj.getQuestion());
+        checkAnswerAndSetPoint(tfData.getPoint(), tfobj);
     }
 
     /**
      * Function to get the MCQ type of question & to display the choices
+     *
      * @param object - object of type Question
      * @throws IOException
      */
     public void checkMCQquestion(Question object) throws IOException {
         logger.info("In MCQ Type Question");
-        MCQ mcqstore = (MCQ) object.getQuestion();
-        model.Question mcqobj = new QuestionMCQ(mcqstore);
+        MCQ mcqData = (MCQ) object.getQuestion();
+        model.Question mcqobj = new QuestionMCQ(mcqData);
         System.out.println("Points : " + ((MCQ) object.getQuestion()).getPoints() + "\n" + mcqobj.getQuestion());
-        String[] choices = mcqstore.getChoices();
+        String[] choices = mcqData.getChoice();
         for (String val : choices)
             System.out.println(val);
-        checkAnswerAndSetPoint(mcqstore.getPoints(),mcqobj);
+        checkAnswerAndSetPoint(mcqData.getPoints(), mcqobj);
     }
 
     /**
      * Function to get the Short Answer type of question
+     *
      * @param object - object of type Question
      * @throws IOException
      */
     public void checkSAQuestion(Question object) throws IOException {
         logger.info("In Short Answer Type Question");
-        SA sastore = (SA) object.getQuestion();
-        model.Question saobj = new QuestionSA(sastore);
-        System.out.println("Points : " + ((SA) object.getQuestion()).getPoints() + "\n" + saobj.getQuestion());
-        checkAnswerAndSetPoint(sastore.getPoints(),saobj);
+        SA saData = (SA) object.getQuestion();
+        model.Question saobj = new QuestionSA(saData);
+        System.out.println("Points : " + ((SA) object.getQuestion()).getPoint() + "\n" + saobj.getQuestion());
+        checkAnswerAndSetPoint(saData.getPoint(), saobj);
     }
 
     /**
      * Function to check whether the user input is correct or wrong also to check that user want to skip that question or not
-     * @param points - Current Points of Player
+     *
+     * @param points      - Current Points of Player
      * @param questionObj - Object of type Question to call the checkAnswer method of Question class
      * @throws IOException
      */
@@ -167,12 +176,12 @@ public class QuizBowlApp {
             return;
         }
         if (questionObj.checkAnswer(answer, points)) {
-            player.setPoints(questionObj.getPoints());
-            logger.debug("Points : " + player.getPoints());
+            player.setScores(questionObj.getPoints());
+            logger.debug("Points : " + player.getScores());
             System.out.println("Correct Answer.. \nPoints Gain : " + questionObj.getPoints() + "\n");
         } else {
-            player.setPoints(questionObj.getPoints());
-            logger.debug("Points : " + player.getPoints());
+            player.setScores(questionObj.getPoints());
+            logger.debug("Points : " + player.getScores());
             System.out.println("Wrong Answer.. \nPoints Lose : " + questionObj.getPoints() + "\n");
         }
     }

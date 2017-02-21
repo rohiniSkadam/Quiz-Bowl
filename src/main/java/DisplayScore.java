@@ -5,12 +5,13 @@ import org.apache.log4j.Logger;
  */
 public class DisplayScore {
     /**
-     *  Function to display the Player Name & the total score of that player
-     * @param player - Player object which contains overall information about player
+     * Function to display the Player Name & the total score of that player
+     *
+     * @param playerObject - Player object which contains overall information about player
      */
-    public static void showScore(Player player) {
+    public static void showScore(Player playerObject) {
         Logger logger = Logger.getLogger(DisplayScore.class);
-        logger.info("Player Name : " + player.getFname() + " Points : " + player.getPoints());
-        System.out.println("\n" + player.getFname() + " " + player.getLname() + ", your game is over!" + "\nYou final score is " + player.getPoints() + " Points \nBetter luck next time!");
+        logger.info("Player Name : " + playerObject.getFname() + " Points : " + playerObject.getScores());
+        System.out.println("\n" + playerObject.getFname() + " " + playerObject.getLname() + ", your game is over!" + "\nYou final score is " + playerObject.getScores() + " Points \nBetter luck next time!");
     }
 }

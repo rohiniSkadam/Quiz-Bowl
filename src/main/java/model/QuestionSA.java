@@ -7,8 +7,9 @@ import QuestionData.SA;
  */
 public class QuestionSA extends Question {
 
-    public QuestionSA(SA object) {
-        super(object.getQuestion(), "SA");
-        this.setAnswer(object.getAnswer());
+    public QuestionSA(SA saObject) {
+        super(saObject.getQuestion(), "SA");
+        this.setAnswers(saObject.getAnswer());
     }
+
 }

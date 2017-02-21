@@ -5,13 +5,13 @@ package QuestionData;
  */
 public class MCQ {
     private String question, answer;
-    private String[] choices;
+    private String[] choice;
     private int points;
 
-    public MCQ(String question, String answer, String[] choices, int points) {
+    public MCQ(String question, String answer, String[] choice, int points) {
         this.question = question;
         this.answer = answer;
-        this.choices = choices;
+        this.choice = choice;
         this.points = points;
     }
 
@@ -23,11 +23,12 @@ public class MCQ {
         return this.answer;
     }
 
-    public String[] getChoices() {
-        return this.choices;
+    public String[] getChoice() {
+        return this.choice;
     }
 
     public int getPoints() {
         return this.points;
     }
+
 }

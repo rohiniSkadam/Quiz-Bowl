@@ -5,19 +5,18 @@ package QuestionData;
  */
 public class Question {
     private Object question;
-    private String type;
+    private String questionType;
 
     public Question(Object question, String type) {
         this.question = question;
-        this.type = type;
+        this.questionType = type;
     }
 
     public Object getQuestion() {
         return this.question;
     }
 
-    public String getType() {
-        return this.type;
+    public String getQuestionType() {
+        return this.questionType;
     }
-
 }

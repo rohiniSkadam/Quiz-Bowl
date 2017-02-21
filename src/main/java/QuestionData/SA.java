@@ -6,12 +6,12 @@ package QuestionData;
 public class SA {
 
     private String question, answer;
-    private int points;
+    private int point;
 
     public SA(String question, String answer, int points) {
         this.question = question;
         this.answer = answer;
-        this.points = points;
+        this.point = points;
     }
 
     public String getQuestion() {
@@ -22,8 +22,7 @@ public class SA {
         return this.answer;
     }
 
-    public int getPoints() {
-        return this.points;
+    public int getPoint() {
+        return this.point;
     }
-
 }

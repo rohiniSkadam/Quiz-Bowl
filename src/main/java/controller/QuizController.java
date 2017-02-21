@@ -23,6 +23,7 @@ public class QuizController {
 
     /**
      * Parameterized Constructor to open & read the file
+     *
      * @param filename - Name of file
      * @throws Exception
      */
@@ -37,6 +38,7 @@ public class QuizController {
 
     /**
      * Function to get count of questions
+     *
      * @return - integer count of question
      */
     public int getQuestionCount() {
@@ -45,6 +47,7 @@ public class QuizController {
 
     /**
      * Function to fech the questions randomely
+     *
      * @return - random questions
      */
     public Question getRandomQuestion() {
@@ -64,16 +67,17 @@ public class QuizController {
     }
 
     /**
-     *  Function to fech the data from file & insert it into the respective type of Storage classes
+     * Function to fech the data from file & insert it into the respective type of Storage classes
+     *
      * @param br -bufferReader to read the lines
      * @return - Arraylist of type question which contains objects of respective type of question
      * @throws Exception
      */
     public ArrayList<Question> openFile(BufferedReader br) throws Exception {
         ArrayList<Question> data = new ArrayList<>();
-        final String tf = "TF";
-        final String mc = "MC";
-        final String sa = "SA";
+        final String TrueFalse= "TF";
+        final String MultipleChoice = "MC";
+        final String ShortAnswer = "SA";
 
         int number = Integer.parseInt(br.readLine());
         while (number-- > 0) {
@@ -83,14 +87,14 @@ public class QuizController {
             logger.info("Question : " + question);
             Question obj;
             switch (choice[0]) {
-                case tf:
+                case TrueFalse:
                     String answertf = br.readLine().toUpperCase();
                     logger.info("Answer : " + answertf);
                     TF tfData = new TF(question, answertf, points);
-                    obj = new Question(tfData, tf);
+                    obj = new Question(tfData, TrueFalse);
                     data.add(obj);
                     break;
-                case mc:
+                case MultipleChoice:
                     int ChoiceNumber = Integer.parseInt(br.readLine());
                     String[] choices = new String[ChoiceNumber];
                     int i = 0;
@@ -103,14 +107,14 @@ public class QuizController {
                     String answerMCQ = br.readLine().toUpperCase();
                     logger.info("Answer : " + answerMCQ);
                     MCQ mcqData = new MCQ(question, answerMCQ, choices, points);
-                    obj = new Question(mcqData, mc);
+                    obj = new Question(mcqData, MultipleChoice);
                     data.add(obj);
                     break;
-                case sa:
+                case ShortAnswer:
                     String answerSA = br.readLine().toUpperCase();
                     logger.info("Answer : " + answerSA);
                     SA saData = new SA(question, answerSA, points);
-                    obj = new Question(saData, sa);
+                    obj = new Question(saData, ShortAnswer);
                     data.add(obj);
                     break;
                 default:

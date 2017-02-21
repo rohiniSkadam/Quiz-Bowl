@@ -5,7 +5,7 @@ package model;
  */
 public class Question {
 
-    private String question, questionType, answer;
+    private String question, questionType, answers;
     private int points = 0;
 
     public Question(String question, String questionType) {
@@ -17,7 +17,7 @@ public class Question {
     }
 
     public Boolean checkAnswer(String answer, int points) {
-        if (answer.equals(this.answer)) {
+        if (answer.equals(this.answers)) {
             this.points = points;
             return true;
         }
@@ -25,7 +25,7 @@ public class Question {
         return false;
     }
 
-    public  String getQuestion() {
+    public String getQuestion() {
         return this.question;
     }
 
@@ -33,7 +33,7 @@ public class Question {
         this.question = question;
     }
 
-    public  int getPoints() {
+    public int getPoints() {
 
         return this.points;
     }
@@ -42,12 +42,12 @@ public class Question {
         this.points = points;
     }
 
-    public  String getAnswer() {
-        return this.answer;
+    public String getAnswers() {
+        return this.answers;
     }
 
-    public  void setAnswer(String answer) {
-        this.answer = answer;
+    public void setAnswers(String answers) {
+        this.answers = answers;
     }
 
     public String getQuestionType() {

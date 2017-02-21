@@ -3,12 +3,12 @@
  */
 public class Player {
     private String lname, fname;
-    private int points;
+    private int scores;
 
     public Player(String lname, String fname) {
         this.lname = lname;
         this.fname = fname;
-        this.points = 0;
+        this.scores = 0;
     }
 
     public String getLname() {
@@ -27,11 +27,12 @@ public class Player {
         this.fname = fname;
     }
 
-    public int getPoints() {
-        return points;
+    public int getScores() {
+        return scores;
     }
 
-    public void setPoints(int points) {
-        this.points = this.points + points;
+    public void setScores(int scores) {
+        this.scores = this.scores + scores;
     }
+
 }

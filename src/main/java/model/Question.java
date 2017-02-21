@@ -1,11 +1,9 @@
 package model;
 
-import org.apache.log4j.Logger;
-
 /**
  * Created by synerzip on 20/2/17.
  */
-public abstract class Question {
+public class Question {
 
     private String question, questionType, answer;
     private int points = 0;
@@ -13,6 +11,9 @@ public abstract class Question {
     public Question(String question, String questionType) {
         this.question = question;
         this.questionType = questionType;
+    }
+
+    public Question() {
     }
 
     public final Boolean checkAnswer(String answer, int points) {

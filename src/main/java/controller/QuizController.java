@@ -17,37 +17,45 @@ import java.util.Random;
  */
 public class QuizController {
 
-    Logger logger=Logger.getLogger(QuizController.class);
-    private final String tf = "TF";
-    private final String mc = "MC";
-    private final String sa = "SA";
     public ArrayList<Question> obj = new ArrayList<>();
-    public boolean[] randoms=null;
-    private BufferedReader br;
-    private ArrayList<Question> data = new ArrayList<>();
+    public boolean[] randomNum = null;
+    Logger logger = Logger.getLogger(QuizController.class);
 
+    /**
+     * Parameterized Constructor to open & read the file
+     * @param filename - Name of file
+     * @throws Exception
+     */
     public QuizController(String filename) throws Exception {
-        File file = new File(getClass().getClassLoader().getResource(filename+".txt").getFile());
+        File file = new File(getClass().getClassLoader().getResource(filename + ".txt").getFile());
         FileReader fr = new FileReader(file);
-        br = new BufferedReader(fr);
-        obj = openFile();
+        BufferedReader br = new BufferedReader(fr);
+        obj = openFile(br);
         logger.info("File Opened Successfully");
-        randoms = new boolean[obj.size()];
+        randomNum = new boolean[obj.size()];
     }
 
+    /**
+     * Function to get count of questions
+     * @return - integer count of question
+     */
     public int getQuestionCount() {
         return this.obj.size();
     }
 
+    /**
+     * Function to fech the questions randomely
+     * @return - random questions
+     */
     public Question getRandomQuestion() {
         Random random = new Random();
         Question object = null;
         int flag = 0;
         do {
             int temp = random.nextInt(obj.size());
-            if (randoms[temp] == false) {
+            if (randomNum[temp] == false) {
                 object = obj.get(temp);
-                randoms[temp] = true;
+                randomNum[temp] = true;
                 break;
             } else
                 flag = 1;
@@ -55,43 +63,54 @@ public class QuizController {
         return object;
     }
 
-    public ArrayList<Question> openFile() throws Exception {
+    /**
+     *  Function to fech the data from file & insert it into the respective type of Storage classes
+     * @param br -bufferReader to read the lines
+     * @return - Arraylist of type question which contains objects of respective type of question
+     * @throws Exception
+     */
+    public ArrayList<Question> openFile(BufferedReader br) throws Exception {
+        ArrayList<Question> data = new ArrayList<>();
+        final String tf = "TF";
+        final String mc = "MC";
+        final String sa = "SA";
+
         int number = Integer.parseInt(br.readLine());
         while (number-- > 0) {
             String[] choice = br.readLine().split(" ");
             int points = Integer.parseInt(choice[1]);
             String question = br.readLine();
-            logger.info("Question : "+question);
+            logger.info("Question : " + question);
             Question obj;
             switch (choice[0]) {
                 case tf:
                     String answertf = br.readLine().toUpperCase();
-                    logger.info("Answer : "+answertf);
-                    TF tfstore = new TF(question, answertf, points);
-                    obj = new Question(tfstore, tf);
+                    logger.info("Answer : " + answertf);
+                    TF tfData = new TF(question, answertf, points);
+                    obj = new Question(tfData, tf);
                     data.add(obj);
                     break;
                 case mc:
                     int ChoiceNumber = Integer.parseInt(br.readLine());
                     String[] choices = new String[ChoiceNumber];
                     int i = 0;
-                    char ch='A';
+                    char ch = 'A';
                     while (ChoiceNumber-- > 0) {
-                            choices[i] = ch+") "+br.readLine();
-                            ch++;
-                            i++;
+                        choices[i] = ch + ") " + br.readLine();
+                        ch++;
+                        i++;
                     }
                     String answerMCQ = br.readLine().toUpperCase();
-                    logger.info("Answer : "+answerMCQ);
-                    MCQ mcq = new MCQ(question, answerMCQ, choices, points);
-                    obj = new Question(mcq, mc);
+                    logger.info("Answer : " + answerMCQ);
+                    MCQ mcqData = new MCQ(question, answerMCQ, choices, points);
+                    obj = new Question(mcqData, mc);
                     data.add(obj);
                     break;
                 case sa:
                     String answerSA = br.readLine().toUpperCase();
-                    logger.info("Answer : "+answerSA);
-                    SA sastore = new SA(question, answerSA, points);
-                    obj = new Question(sastore, sa);
+                    logger.info("Answer : " + answerSA);
+                    SA saData = new SA(question, answerSA, points);
+                    obj = new Question(saData, sa);
                     data.add(obj);
                     break;
                 default:

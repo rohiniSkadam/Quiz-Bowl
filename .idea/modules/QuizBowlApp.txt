@@ -1,0 +1,21 @@
+INFO    2017-02-21 11:10:53,844 [main] controller.QuizController  - Question : There exist birds that can not fly. (true/false)
+INFO    2017-02-21 11:10:53,845 [main] controller.QuizController  - Answer : TRUE
+INFO    2017-02-21 11:10:53,846 [main] controller.QuizController  - Question : Who was the president of the USA in 1991?
+INFO    2017-02-21 11:10:53,846 [main] controller.QuizController  - Answer : E
+INFO    2017-02-21 11:10:53,846 [main] controller.QuizController  - Question : What city hosted the 2004 Summer Olympics?
+INFO    2017-02-21 11:10:53,846 [main] controller.QuizController  - Answer : ATHENS
+INFO    2017-02-21 11:10:53,847 [main] controller.QuizController  - File Opened Successfully
+INFO    2017-02-21 11:12:08,605 [main] controller.QuizController  - Question : There exist birds that can not fly. (true/false)
+INFO    2017-02-21 11:12:08,608 [main] controller.QuizController  - Answer : TRUE
+INFO    2017-02-21 11:12:08,609 [main] controller.QuizController  - Question : Who was the president of the USA in 1991?
+INFO    2017-02-21 11:12:08,609 [main] controller.QuizController  - Answer : E
+INFO    2017-02-21 11:12:08,614 [main] controller.QuizController  - Question : What city hosted the 2004 Summer Olympics?
+INFO    2017-02-21 11:12:08,614 [main] controller.QuizController  - Answer : ATHENS
+INFO    2017-02-21 11:12:08,614 [main] controller.QuizController  - File Opened Successfully
+INFO    2017-02-21 11:43:51,143 [main] controller.QuizController  - Question : There exist birds that can not fly. (true/false)
+INFO    2017-02-21 11:43:51,145 [main] controller.QuizController  - Answer : TRUE
+INFO    2017-02-21 11:43:51,145 [main] controller.QuizController  - Question : Who was the president of the USA in 1991?
+INFO    2017-02-21 11:43:51,145 [main] controller.QuizController  - Answer : E
+INFO    2017-02-21 11:43:51,146 [main] controller.QuizController  - Question : What city hosted the 2004 Summer Olympics?
+INFO    2017-02-21 11:43:51,146 [main] controller.QuizController  - Answer : ATHENS
+INFO    2017-02-21 11:43:51,146 [main] controller.QuizController  - File Opened Successfully

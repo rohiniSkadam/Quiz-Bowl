@@ -17,38 +17,26 @@ import java.io.InputStreamReader;
  */
 public class QuizBowlApp {
 
-    Logger logger=Logger.getLogger(QuizBowlApp.class);
-    public final static String sa = "SA";
-    public final static String mc = "MC";
-    public final static String tf = "TF";
+    Logger logger = Logger.getLogger(QuizBowlApp.class);
     private int questionnumbers;
     private BufferedReader br;
-    private QuizController filedriver;
+    private QuizController quizController;
     private Player player;
 
+    /**
+     * Main method that start calling other methods
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         QuizBowlApp obj = new QuizBowlApp();
         obj.getInput();
-        if (obj.getNumberOfQuestions()) {
-            obj.quizBowl();
-        }
     }
 
-    private boolean getNumberOfQuestions() throws IOException {
-        boolean flag = false;
-        do {
-            System.out.print("How many questions would you like (out of 3)?  : ");
-            int number = Integer.parseInt(br.readLine());
-            if (filedriver.getQuestionCount() >= number && number > 0) {
-                questionnumbers = number;
-                flag = false;
-            } else {
-                flag = true;
-            }
-        } while (flag);
-        return true;
-    }
-
+    /**
+     *  Function to take player information & input file name
+     * @throws Exception
+     */
     void getInput() throws Exception {
         br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("First Name : ");
@@ -57,77 +45,135 @@ public class QuizBowlApp {
         String lname = br.readLine().toUpperCase();
         System.out.print("Filename : ");
         String filename = br.readLine().toLowerCase();
-        player = new Player(lname, fname);
-        filedriver = new QuizController(filename);
+        initializeGame(fname, lname, filename);
     }
 
+    /**
+     * Function to initialize the player information & to start the quiz bowl
+     * @param fname - first name of player
+     * @param lname - last name of player
+     * @param filename - name of file which contain questions & answers
+     * @throws Exception
+     */
+    void initializeGame(String fname, String lname, String filename) throws Exception {
+        player = new Player(lname, fname);
+        quizController = new QuizController(filename);
+        if (getNumberOfQuestions()) {
+            quizBowl();
+        }
+    }
+
+    /**
+     * Function to ask user that how many question he/she want to attend.
+     * @return - return boolean flag
+     * @throws IOException
+     */
+    private boolean getNumberOfQuestions() throws IOException {
+        boolean flag = false;
+        do {
+            System.out.print("How many questions would you like (out of 3)?  : ");
+            int number = Integer.parseInt(br.readLine());
+            if (quizController.getQuestionCount() >= number && number > 0) {
+                questionnumbers = number;
+                flag = false;
+            } else {
+                flag = true;
+                System.out.println("Question count must be less than "+quizController.getQuestionCount()+" And greater than 0");
+            }
+        } while (flag);
+        return true;
+    }
+
+    /**
+     * Function to start quiz & to call the display for player information
+     * @throws Exception
+     */
     void quizBowl() throws Exception {
+        final String sa = "SA";
+        final String mc = "MC";
+        final String tf = "TF";
         Question object;
-        String answer;
         while (questionnumbers-- > 0) {
-            object = filedriver.getRandomQuestion();
+            object = quizController.getRandomQuestion();
             System.out.println(object.getType());
             switch (object.getType()) {
                 case tf:
-                    logger.info("In True False Type Question");
-                    TF tfstore = (TF) object.getQuestion();
-                    QuestionTF tfobj = new QuestionTF(tfstore);
-                    System.out.println(tfobj.getQuestion());
-                    answer =br.readLine().toUpperCase();
-                    if (answer.equals("SKIP"))
-                        break;
-                    if (tfobj.checkAnswer(answer, tfstore.getPoints())) {
-                        player.setPoints(tfobj.getPoints());
-                        logger.debug("TF Points : "+player.getPoints());
-                        System.out.println("Correct Answer.. \nPoints Gain : "+tfobj.getPoints()+"\n");
-                    } else {
-                        player.setPoints(tfobj.getPoints());
-                        logger.debug("TF Points : "+player.getPoints());
-                        System.out.println("Wrong Answer.. \nPoints Lose : "+tfobj.getPoints()+"\n");
-                    }
+                    checkTFQuestion(object);
                     break;
                 case mc:
-                    logger.info("In MCQ Type Question");
-                    MCQ mcqstore = (MCQ) object.getQuestion();
-                    QuestionMCQ mcqobj = new QuestionMCQ(mcqstore);
-                    System.out.println(mcqobj.getQuestion());
-                    String[] choices = mcqstore.getChoices();
-                    for (String val : choices)
-                        System.out.println(val);
-                    answer = br.readLine().toUpperCase();
-                    if (answer.equals("SKIP"))
-                        break;
-                    if (mcqobj.checkAnswer(answer, mcqstore.getPoints())) {
-                        player.setPoints(mcqobj.getPoints());
-                        logger.debug("MCQ Points : "+player.getPoints());
-                        System.out.println("Correct Answer.. \nPoints Gain : "+mcqobj.getPoints()+"\n");
-                    } else {
-                        player.setPoints(mcqobj.getPoints());
-                        logger.debug("MCQ Points : "+player.getPoints());
-                        System.out.println("Wrong Answer.. \nPoints Lose : "+mcqobj.getPoints()+"\n");
-                    }
+                    checkMCQquestion(object);
                     break;
                 case sa:
-                    logger.info("In Short Answer Type Question");
-                    SA sastore = (SA) object.getQuestion();
-                    QuestionSA saobj = new QuestionSA(sastore);
-                    System.out.println(saobj.getQuestion());
-                    answer = br.readLine().toUpperCase();
-                    if (answer.equals("SKIP"))
-                        break;
-                    if (saobj.checkAnswer(answer, sastore.getPoints())) {
-                        player.setPoints(saobj.getPoints());
-                        logger.debug("SA Points : "+player.getPoints());
-                        System.out.println("Correct Answer.. \nPoints Gain : "+saobj.getPoints()+"\n");
-                    } else {
-                        player.setPoints(saobj.getPoints());
-                        logger.debug("SA Points : "+player.getPoints());
-                        System.out.println("Wrong Answer.. \nPoints Lose : "+saobj.getPoints()+"\n");
-                    }
+                    checkSAQuestion(object);
                     break;
             }
         }
         DisplayScore.showScore(player);
     }
 
+    /**
+     * Function to get the True False type of question
+     * @param object - object of type Question
+     * @throws IOException
+     */
+    public void checkTFQuestion(Question object) throws IOException {
+        logger.info("In True False Type Question");
+        TF tfstore = (TF) object.getQuestion();
+        QuestionTF tfobj = new QuestionTF(tfstore);
+        System.out.println("Points : " + ((TF) object.getQuestion()).getPoints() + "\n" + tfobj.getQuestion());
+        checkAnswerAndSetPoint(tfstore.getPoints(),tfobj);
+    }
+
+    /**
+     * Function to get the MCQ type of question & to display the choices
+     * @param object - object of type Question
+     * @throws IOException
+     */
+    public void checkMCQquestion(Question object) throws IOException {
+        logger.info("In MCQ Type Question");
+        MCQ mcqstore = (MCQ) object.getQuestion();
+        model.Question mcqobj = new QuestionMCQ(mcqstore);
+        System.out.println("Points : " + ((MCQ) object.getQuestion()).getPoints() + "\n" + mcqobj.getQuestion());
+        String[] choices = mcqstore.getChoices();
+        for (String val : choices)
+            System.out.println(val);
+        checkAnswerAndSetPoint(mcqstore.getPoints(),mcqobj);
+    }
+
+    /**
+     * Function to get the Short Answer type of question
+     * @param object - object of type Question
+     * @throws IOException
+     */
+    public void checkSAQuestion(Question object) throws IOException {
+        logger.info("In Short Answer Type Question");
+        SA sastore = (SA) object.getQuestion();
+        model.Question saobj = new QuestionSA(sastore);
+        System.out.println("Points : " + ((SA) object.getQuestion()).getPoints() + "\n" + saobj.getQuestion());
+        checkAnswerAndSetPoint(sastore.getPoints(),saobj);
+    }
+
+    /**
+     * Function to check whether the user input is correct or wrong also to check that user want to skip that question or not
+     * @param points - Current Points of Player
+     * @param questionObj - Object of type Question to call the checkAnswer method of Question class
+     * @throws IOException
+     */
+    public void checkAnswerAndSetPoint(int points, model.Question questionObj) throws IOException {
+        String answer;
+        answer = br.readLine().toUpperCase();
+        if (answer.equals("SKIP")) {
+            System.out.println("You have elected to skip that question.");
+            return;
+        }
+        if (questionObj.checkAnswer(answer, points)) {
+            player.setPoints(questionObj.getPoints());
+            logger.debug("Points : " + player.getPoints());
+            System.out.println("Correct Answer.. \nPoints Gain : " + questionObj.getPoints() + "\n");
+        } else {
+            player.setPoints(questionObj.getPoints());
+            logger.debug("Points : " + player.getPoints());
+            System.out.println("Wrong Answer.. \nPoints Lose : " + questionObj.getPoints() + "\n");
+        }
+    }
 }

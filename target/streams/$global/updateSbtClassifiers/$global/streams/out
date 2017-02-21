@@ -10,7 +10,6 @@
 [debug] == resolving dependencies default#quizbowlapp$sbt_2.12;1.0->org.scala-sbt#sbt;0.13.8 [default->default(compile)]
 [info] Resolving org.scala-sbt#sbt;0.13.8 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.8 {default=[default(compile)]}
-[debug] no default cache defined: set to /home/synerzip/.ivy2/cache
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.8
 [debug] 	found org.scala-sbt#sbt;0.13.8 in sbt-chain
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.8->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
@@ -704,9 +703,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 349ms :: artifacts dl 13ms
+[debug] :: resolution report :: resolve 615ms :: artifacts dl 20ms
 [debug] 	report for default#quizbowlapp$sbt_2.12;1.0 default produced in /home/synerzip/QuizBowlApp/target/resolution-cache/reports/default-quizbowlapp$sbt_2.12-default.xml
-[debug] 	resolve done (349ms resolve - 13ms download)
+[debug] 	resolve done (615ms resolve - 20ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#quizbowlapp$sources_2.12;1.0
 [debug] 	confs: [default]
@@ -1070,6 +1069,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 77ms :: artifacts dl 14ms
+[debug] :: resolution report :: resolve 93ms :: artifacts dl 16ms
 [debug] 	report for default#quizbowlapp$sources_2.12;1.0 default produced in /home/synerzip/QuizBowlApp/target/resolution-cache/reports/default-quizbowlapp$sources_2.12-default.xml
-[debug] 	resolve done (77ms resolve - 14ms download)
+[debug] 	resolve done (93ms resolve - 16ms download)

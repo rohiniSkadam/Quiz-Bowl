@@ -3,6 +3,7 @@ import QuestionData.Question;
 import QuestionData.SA;
 import QuestionData.TF;
 import controller.QuizController;
+import model.Player;
 import model.QuestionMCQ;
 import model.QuestionSA;
 import model.QuestionTF;
@@ -164,7 +165,7 @@ public class QuizBowlApp {
     /**
      * Function to check whether the user input is correct or wrong also to check that user want to skip that question or not
      *
-     * @param points      - Current Points of Player
+     * @param points      - Current Points of model.Player
      * @param questionObj - Object of type Question to call the checkAnswer method of Question class
      * @throws IOException
      */

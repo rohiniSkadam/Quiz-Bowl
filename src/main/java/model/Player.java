@@ -1,3 +1,5 @@
+package model;
+
 /**
  * Created by synerzip on 20/2/17.
  */

@@ -1,6 +1,6 @@
 package model;
 
-import QuestionData.MCQ;
+import questionData.MCQ;
 
 /**
  * Created by synerzip on 20/2/17.

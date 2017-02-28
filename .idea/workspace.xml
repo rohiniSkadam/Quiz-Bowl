@@ -40,34 +40,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f0540da764c6a5a08d7c.cache" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f0540da764c6a5a08d7c.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Player.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/quizbowlapp.iml" afterPath="$PROJECT_DIR$/.idea/modules/quizbowlapp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuizBowlApp.txt" afterPath="$PROJECT_DIR$/QuizBowlApp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/QuizBowlApp.java" afterPath="$PROJECT_DIR$/src/main/java/QuizBowlApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/QuizController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/QuizController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sbt_2.12/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sbt_2.12/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sbt_2.12/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sbt_2.12/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_2.12/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_2.12/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_2.12/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_2.12/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_javadoc_2.12/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_javadoc_2.12/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_javadoc_2.12/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_javadoc_2.12/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sbt_2.12-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sbt_2.12-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_2.12-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_2.12-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-quizbowlapp$sources_javadoc_2.12-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
     </list>
     <ignored path="QuizBowlApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,8 +72,8 @@
       <file leaf-file-name="QuizController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/QuizController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
+            <state relative-caret-position="457">
+              <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1488262719966" expanded="true" signature="723:1051" ph="{...}" />
@@ -156,16 +129,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1391,6 +1354,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/QuizBowlApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/QuestionData/SA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1415,20 +1388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/QuizBowlApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-938">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/QuizController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
+        <state relative-caret-position="457">
+          <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1488262719966" expanded="true" signature="723:1051" ph="{...}" />

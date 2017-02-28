@@ -1,6 +1,6 @@
 package model;
 
-import QuestionData.SA;
+import questionData.SA;
 
 /**
  * Created by synerzip on 20/2/17.

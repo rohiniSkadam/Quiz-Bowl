@@ -1,6 +1,6 @@
 package model;
 
-import QuestionData.TF;
+import questionData.TF;
 
 /**
  * Created by synerzip on 20/2/17.

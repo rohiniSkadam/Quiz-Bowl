@@ -1,7 +1,7 @@
-import QuestionData.MCQ;
-import QuestionData.Question;
-import QuestionData.SA;
-import QuestionData.TF;
+import questionData.MCQ;
+import questionData.Question;
+import questionData.SA;
+import questionData.TF;
 import controller.QuizController;
 import model.Player;
 import model.QuestionMCQ;

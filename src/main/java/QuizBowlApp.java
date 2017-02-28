@@ -99,7 +99,7 @@ public class QuizBowlApp {
         final String mc = "MC";
         final String tf = "TF";
         Question object;
-        while (questionNum-- > 0) {
+        while (questionNum > 0) {
             object = quizController.getRandomQuestion();
             System.out.println(object.getQuestionType());
             switch (object.getQuestionType()) {
@@ -113,6 +113,7 @@ public class QuizBowlApp {
                     checkSAQuestion(object);
                     break;
             }
+            questionNum--;
         }
         DisplayScore.showScore(player);
     }

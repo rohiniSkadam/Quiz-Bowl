@@ -203,3 +203,15 @@ DEBUG   2017-02-27 16:57:18,769 [main] QuizBowlApp  - Points : 5
 INFO    2017-02-27 16:57:18,769 [main] QuizBowlApp  - In MCQ Type Question
 DEBUG   2017-02-27 16:57:21,385 [main] QuizBowlApp  - Points : 15
 INFO    2017-02-27 16:57:21,386 [main] DisplayScore  - model.Player Name : ROHINI Points : 15
+INFO    2017-02-28 11:50:18,972 [main] controller.QuizController  - Question : There exist birds that can not fly. (true/false)
+INFO    2017-02-28 11:50:18,973 [main] controller.QuizController  - Answer : TRUE
+INFO    2017-02-28 11:50:18,973 [main] controller.QuizController  - Question : Who was the president of the USA in 1991?
+INFO    2017-02-28 11:50:18,973 [main] controller.QuizController  - Answer : E
+INFO    2017-02-28 11:50:18,973 [main] controller.QuizController  - Question : What city hosted the 2004 Summer Olympics?
+INFO    2017-02-28 11:50:18,973 [main] controller.QuizController  - Answer : ATHENS
+INFO    2017-02-28 11:50:18,974 [main] controller.QuizController  - File Opened Successfully
+INFO    2017-02-28 11:50:20,438 [main] QuizBowlApp  - In MCQ Type Question
+DEBUG   2017-02-28 11:50:24,535 [main] QuizBowlApp  - Points : 10
+INFO    2017-02-28 11:50:24,535 [main] QuizBowlApp  - In True False Type Question
+DEBUG   2017-02-28 11:50:27,293 [main] QuizBowlApp  - Points : 15
+INFO    2017-02-28 11:50:27,294 [main] DisplayScore  - model.Player Name : ROHINI Points : 15

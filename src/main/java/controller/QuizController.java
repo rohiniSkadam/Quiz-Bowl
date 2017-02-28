@@ -80,7 +80,7 @@ public class QuizController {
         final String ShortAnswer = "SA";
 
         int number = Integer.parseInt(br.readLine());
-        while (number-- > 0) {
+        while (number > 0) {
             String[] choice = br.readLine().split(" ");
             int points = Integer.parseInt(choice[1]);
             String question = br.readLine();
@@ -120,6 +120,7 @@ public class QuizController {
                 default:
                     System.out.println("Wrong Choice.");
             }
+            number--;
         }
         return data;
     }

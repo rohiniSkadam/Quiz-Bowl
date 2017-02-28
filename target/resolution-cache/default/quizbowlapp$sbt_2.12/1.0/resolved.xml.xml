@@ -4,7 +4,7 @@
 		module="quizbowlapp$sbt_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170227165508"
+		publication="20170228113715"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

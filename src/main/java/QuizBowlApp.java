@@ -76,7 +76,7 @@ public class QuizBowlApp {
     private boolean getNumberOfQuestions() throws IOException {
         boolean flag = false;
         do {
-            System.out.print("How many questions would you like (out of 3)?  : ");
+            System.out.print("How many questions would you like (out of "+quizController.getQuestionCount()+" )? : ");
             int number = Integer.parseInt(br.readLine());
             if (quizController.getQuestionCount() >= number) {
                 questionNum = number;

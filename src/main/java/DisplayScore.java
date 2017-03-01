@@ -13,6 +13,8 @@ public class DisplayScore {
     public static void showScore(Player playerObject) {
         Logger logger = Logger.getLogger(DisplayScore.class);
         logger.info("model.Player Name : " + playerObject.getFname() + " Points : " + playerObject.getScores());
-        System.out.println("\n" + playerObject.getFname() + " " + playerObject.getLname() + ", your game is over!" + "\nYou final score is " + playerObject.getScores() + " Points \nBetter luck next time!");
+        System.out.println("\n" + playerObject.getFname() + " " + playerObject.getLname() +
+                ", your game is over!" + "\nYou final score is " + playerObject.getScores() +
+                " Points \nBetter luck next time!");
     }
 }

@@ -21,7 +21,7 @@ public class QuizBowlApp {
     Logger logger = Logger.getLogger(QuizBowlApp.class);
     private int questionNum;
     private BufferedReader br;
-    private QuizController quizController;
+    private QuizController quizController=new QuizController();
     private Player player;
 
     /**
@@ -61,7 +61,7 @@ public class QuizBowlApp {
      */
     void initializeGame(String fname, String lname, String filename) throws Exception {
         player = new Player(lname, fname);
-        quizController = new QuizController(filename);
+        quizController.getFile(filename);
         if (getNumberOfQuestions()) {
             quizBowl();
         }
@@ -76,7 +76,7 @@ public class QuizBowlApp {
     private boolean getNumberOfQuestions() throws IOException {
         boolean flag = false;
         do {
-            System.out.print("How many questions would you like (out of "+quizController.getQuestionCount()+" )? : ");
+            System.out.print("How many questions would you like (out of "+quizController.getQuestionCount()+" ) ? : ");
             int number = Integer.parseInt(br.readLine());
             if (quizController.getQuestionCount() >= number) {
                 questionNum = number;

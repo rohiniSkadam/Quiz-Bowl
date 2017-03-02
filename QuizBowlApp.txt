@@ -292,3 +292,23 @@ DEBUG   2017-03-01 11:35:02,017 [main] QuizBowlApp  - Points : -5
 INFO    2017-03-01 11:35:02,017 [main] QuizBowlApp  - In Short Answer Type Question
 DEBUG   2017-03-01 11:35:05,593 [main] QuizBowlApp  - Points : 15
 INFO    2017-03-01 11:35:05,593 [main] DisplayScore  - model.Player Name : ROHINI Points : 15
+INFO    2017-03-02 18:44:41,500 [main] controller.QuizController  - Question : There exist birds that can not fly. (true/false)
+INFO    2017-03-02 18:44:41,502 [main] controller.QuizController  - Answer : TRUE
+INFO    2017-03-02 18:44:41,502 [main] controller.QuizController  - Question : Who was the president of the USA in 1991?
+INFO    2017-03-02 18:44:41,503 [main] controller.QuizController  - Answer : E
+INFO    2017-03-02 18:44:41,503 [main] controller.QuizController  - Question : What city hosted the 2004 Summer Olympics?
+INFO    2017-03-02 18:44:41,503 [main] controller.QuizController  - Answer : ATHENS
+INFO    2017-03-02 18:45:31,116 [main] controller.QuizController  - Question : There exist birds that can not fly. (true/false)
+INFO    2017-03-02 18:45:31,117 [main] controller.QuizController  - Answer : TRUE
+INFO    2017-03-02 18:45:31,118 [main] controller.QuizController  - Question : Who was the president of the USA in 1991?
+INFO    2017-03-02 18:45:31,118 [main] controller.QuizController  - Answer : E
+INFO    2017-03-02 18:45:31,119 [main] controller.QuizController  - Question : What city hosted the 2004 Summer Olympics?
+INFO    2017-03-02 18:45:31,119 [main] controller.QuizController  - Answer : ATHENS
+INFO    2017-03-02 18:45:31,119 [main] controller.QuizController  - Question : Grand Central Terminal, Park Avenue, New York is the world's
+INFO    2017-03-02 18:45:31,119 [main] controller.QuizController  - Answer : A
+INFO    2017-03-02 18:45:31,120 [main] controller.QuizController  - File Opened Successfully
+INFO    2017-03-02 18:45:33,300 [main] QuizBowlApp  - In True False Type Question
+DEBUG   2017-03-02 18:45:36,610 [main] QuizBowlApp  - Points : 5
+INFO    2017-03-02 18:45:36,610 [main] QuizBowlApp  - In MCQ Type Question
+DEBUG   2017-03-02 18:45:38,914 [main] QuizBowlApp  - Points : 15
+INFO    2017-03-02 18:45:38,915 [main] DisplayScore  - model.Player Name : ROHINI Points : 15

@@ -22,12 +22,13 @@ public class QuizController {
     Logger logger = Logger.getLogger(QuizController.class);
 
     /**
-     * Parameterized Constructor to open & read the file
+     * Function to Open the File
      *
      * @param filename - Name of file
      * @throws Exception
      */
-    public QuizController(String filename) throws Exception {
+    public void getFile(String filename) throws Exception
+    {
         File file = new File(getClass().getClassLoader().getResource(filename + ".txt").getFile());
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);

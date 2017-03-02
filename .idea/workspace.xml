@@ -40,12 +40,17 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f0540da764c6a5a08d7c.cache" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f0540da764c6a5a08d7c.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/QuestionData/MCQ.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/QuestionData/Question.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/QuestionData/SA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/QuestionData/TF.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/QuizBowlApp.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/QuizBowlApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controller/QuizController.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controller/QuizController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/quizbowlapp.iml" afterPath="$PROJECT_DIR$/.idea/modules/quizbowlapp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QuizBowlApp.txt" afterPath="$PROJECT_DIR$/QuizBowlApp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DisplayScore.java" afterPath="$PROJECT_DIR$/src/main/java/DisplayScore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/QuizBowlApp.java" afterPath="$PROJECT_DIR$/src/main/java/QuizBowlApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/sample.txt" afterPath="$PROJECT_DIR$/src/main/resources/sample.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/QuizController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/QuizController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sbt_2.12/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sbt_2.12/1.0/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sbt_2.12/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sbt_2.12/1.0/resolved.xml.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_2.12/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/quizbowlapp$sources_2.12/1.0/resolved.xml.properties" />
@@ -97,25 +102,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QuizController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QuizController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/QuizController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-533">
-              <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+            <state relative-caret-position="-68">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1488265339250" expanded="true" signature="723:1051" ph="{...}" />
+                <marker date="1488460423794" expanded="true" signature="638:1029" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuizBowlApp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/QuizBowlApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -123,8 +118,61 @@
       <file leaf-file-name="sample.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sample.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="360">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionMCQ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionMCQ.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="e#304#305#0" expanded="false" />
+                <element signature="e#332#333#0" expanded="false" />
+                <element signature="e#374#375#0" expanded="false" />
+                <element signature="e#408#409#0" expanded="false" />
+                <element signature="e#440#441#0" expanded="false" />
+                <element signature="e#468#469#0" expanded="false" />
+                <element signature="e#510#511#0" expanded="false" />
+                <element signature="e#544#545#0" expanded="false" />
+                <element signature="e#574#575#0" expanded="false" />
+                <element signature="e#603#604#0" expanded="false" />
+                <element signature="e#644#645#0" expanded="false" />
+                <element signature="e#694#695#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionSA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionSA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionTF.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionTF.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,9 +181,55 @@
       <file leaf-file-name="DisplayScore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DisplayScore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="75">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuizBowlApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/QuizBowlApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TF.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/questionData/TF.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="e#338#339#0" expanded="false" />
+                <element signature="e#374#375#0" expanded="false" />
+                <element signature="e#407#408#0" expanded="false" />
+                <element signature="e#441#442#0" expanded="false" />
+                <element signature="e#470#471#0" expanded="false" />
+                <element signature="e#503#504#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/questionData/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#312#313#0" expanded="false" />
+                <element signature="e#348#349#0" expanded="false" />
+                <element signature="e#387#388#0" expanded="false" />
+                <element signature="e#427#428#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,7 +268,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Question.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/QuestionSA.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/QuestionMCQ.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/QuestionTF.java" />
         <option value="$PROJECT_DIR$/src/main/java/QuestionData/MCQ.java" />
         <option value="$PROJECT_DIR$/src/main/java/QuestionData/Question.java" />
         <option value="$PROJECT_DIR$/src/main/java/QuestionData/SA.java" />
@@ -183,10 +276,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/TestQuizBowlApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/QuizController.java" />
         <option value="$PROJECT_DIR$/src/main/java/DisplayScore.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/sample.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/model/QuestionTF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/QuizController.java" />
         <option value="$PROJECT_DIR$/src/main/java/QuizBowlApp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sample.txt" />
       </list>
     </option>
   </component>
@@ -221,8 +315,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -423,7 +517,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -851,7 +945,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1488346802467" />
+    <option name="lastUpdateTimestamp" value="1488432587579" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -951,7 +1045,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -962,7 +1056,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26304802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26304802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3058455" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1025,7 +1119,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#441#442#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,7 +1136,7 @@
           <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1488265339250" expanded="true" signature="723:1051" ph="{...}" />
+            <marker date="1488460423794" expanded="true" signature="638:1029" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1044,7 +1145,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="90" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,7 +1176,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#427#428#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,7 +1189,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,7 +1214,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#441#442#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,7 +1231,7 @@
           <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1488265339250" expanded="true" signature="723:1051" ph="{...}" />
+            <marker date="1488460423794" expanded="true" signature="638:1029" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1123,7 +1240,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="90" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1152,7 +1271,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#427#428#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1160,7 +1284,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1183,7 +1309,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#441#442#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1193,7 +1326,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1488265339250" expanded="true" signature="723:1051" ph="{...}" />
+            <marker date="1488460423794" expanded="true" signature="638:1029" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1233,7 +1366,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#427#428#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1248,7 +1386,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,7 +1398,7 @@
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1488265339250" expanded="true" signature="723:1051" ph="{...}" />
+            <marker date="1488460423794" expanded="true" signature="638:1029" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1275,71 +1415,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/FileDriver.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/fileLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionSA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionMCQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionTF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/questionData/MCQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/questionData/TF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#304#305#0" expanded="false" />
-            <element signature="e#332#333#0" expanded="false" />
-            <element signature="e#374#375#0" expanded="false" />
-            <element signature="e#408#409#0" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <element signature="e#468#469#0" expanded="false" />
-            <element signature="e#510#511#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#574#575#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#644#645#0" expanded="false" />
-            <element signature="e#694#695#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QuizBowlApp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2489">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1347,14 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/questionData/SA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1374,51 +1445,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="41">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/questionData/MCQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/questionData/SA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionSA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionMCQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/questionData/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#427#428#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/questionData/TF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#441#442#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/QuestionTF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#332#333#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
+            <element signature="e#440#441#0" expanded="false" />
+            <element signature="e#468#469#0" expanded="false" />
+            <element signature="e#510#511#0" expanded="false" />
+            <element signature="e#544#545#0" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#603#604#0" expanded="false" />
+            <element signature="e#644#645#0" expanded="false" />
+            <element signature="e#694#695#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DisplayScore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/QuizController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/QuizBowlApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-533">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        <state relative-caret-position="195">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1488265339250" expanded="true" signature="723:1051" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sample.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="360">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/QuizBowlApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/QuizController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="-68">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1488460423794" expanded="true" signature="638:1029" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

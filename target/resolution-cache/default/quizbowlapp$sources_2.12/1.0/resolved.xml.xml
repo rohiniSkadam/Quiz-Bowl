@@ -4,7 +4,7 @@
 		module="quizbowlapp$sources_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170301111002"
+		publication="20170302105946"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

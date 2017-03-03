@@ -18,7 +18,7 @@ import java.util.Random;
 public class QuizController {
 
     public ArrayList<Question> questionObj = new ArrayList<>();
-    public boolean[] randomNum = null;
+    public int[] randomNum = null;
     Logger logger = Logger.getLogger(QuizController.class);
 
     /**
@@ -34,7 +34,7 @@ public class QuizController {
         BufferedReader br = new BufferedReader(fr);
         questionObj = openFile(br);
         logger.info("File Opened Successfully");
-        randomNum = new boolean[questionObj.size()];
+        randomNum = new int[questionObj.size()];
     }
 
     /**
@@ -57,9 +57,9 @@ public class QuizController {
         int flag = 0;
         do {
             int temp = random.nextInt(questionObj.size());
-            if (randomNum[temp] == false) {
+            if (randomNum[temp] == 0) {
                 question = questionObj.get(temp);
-                randomNum[temp] = true;
+                randomNum[temp] = 1;
                 break;
             } else
                 flag = 1;

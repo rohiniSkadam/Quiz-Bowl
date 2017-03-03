@@ -328,3 +328,19 @@ DEBUG   2017-03-03 11:29:43,054 [main] QuizBowlApp  - Points : 15
 INFO    2017-03-03 11:29:43,054 [main] QuizBowlApp  - In MCQ Type Question
 DEBUG   2017-03-03 11:29:44,718 [main] QuizBowlApp  - Points : 25
 INFO    2017-03-03 11:29:44,719 [main] DisplayScore  - model.Player Name : A Points : 25
+INFO    2017-03-03 14:19:24,520 [main] controller.QuizController  - Question : There exist birds that can not fly. (true/false)
+INFO    2017-03-03 14:19:24,522 [main] controller.QuizController  - Answer : TRUE
+INFO    2017-03-03 14:19:24,523 [main] controller.QuizController  - Question : Who was the president of the USA in 1991?
+INFO    2017-03-03 14:19:24,523 [main] controller.QuizController  - Answer : E
+INFO    2017-03-03 14:19:24,523 [main] controller.QuizController  - Question : What city hosted the 2004 Summer Olympics?
+INFO    2017-03-03 14:19:24,523 [main] controller.QuizController  - Answer : ATHENS
+INFO    2017-03-03 14:19:24,524 [main] controller.QuizController  - Question : Grand Central Terminal, Park Avenue, New York is the world's
+INFO    2017-03-03 14:19:24,524 [main] controller.QuizController  - Answer : A
+INFO    2017-03-03 14:19:24,524 [main] controller.QuizController  - File Opened Successfully
+INFO    2017-03-03 14:19:26,023 [main] QuizBowlApp  - In MCQ Type Question
+DEBUG   2017-03-03 14:19:27,726 [main] QuizBowlApp  - Points : 10
+INFO    2017-03-03 14:19:27,727 [main] QuizBowlApp  - In MCQ Type Question
+DEBUG   2017-03-03 14:19:29,263 [main] QuizBowlApp  - Points : 20
+INFO    2017-03-03 14:19:29,263 [main] QuizBowlApp  - In True False Type Question
+DEBUG   2017-03-03 14:19:31,310 [main] QuizBowlApp  - Points : 25
+INFO    2017-03-03 14:19:31,311 [main] DisplayScore  - model.Player Name : A Points : 25

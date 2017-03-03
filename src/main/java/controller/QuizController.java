@@ -17,7 +17,7 @@ import java.util.Random;
  */
 public class QuizController {
 
-    public ArrayList<Question> obj = new ArrayList<>();
+    public ArrayList<Question> questionObj = new ArrayList<>();
     public boolean[] randomNum = null;
     Logger logger = Logger.getLogger(QuizController.class);
 
@@ -32,9 +32,9 @@ public class QuizController {
         File file = new File(getClass().getClassLoader().getResource(filename + ".txt").getFile());
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
-        obj = openFile(br);
+        questionObj = openFile(br);
         logger.info("File Opened Successfully");
-        randomNum = new boolean[obj.size()];
+        randomNum = new boolean[questionObj.size()];
     }
 
     /**
@@ -43,7 +43,7 @@ public class QuizController {
      * @return - integer count of question
      */
     public int getQuestionCount() {
-        return this.obj.size();
+        return this.questionObj.size();
     }
 
     /**
@@ -53,18 +53,18 @@ public class QuizController {
      */
     public Question getRandomQuestion() {
         Random random = new Random();
-        Question object = null;
+        Question question = null;
         int flag = 0;
         do {
-            int temp = random.nextInt(obj.size());
+            int temp = random.nextInt(questionObj.size());
             if (randomNum[temp] == false) {
-                object = obj.get(temp);
+                question = questionObj.get(temp);
                 randomNum[temp] = true;
                 break;
             } else
                 flag = 1;
         } while (flag == 1);
-        return object;
+        return question;
     }
 
     /**
@@ -86,37 +86,37 @@ public class QuizController {
             int points = Integer.parseInt(choice[1]);
             String question = br.readLine();
             logger.info("Question : " + question);
-            Question obj;
+            Question questionObject;
             switch (choice[0]) {
                 case TrueFalse:
                     String answertf = br.readLine().toUpperCase();
                     logger.info("Answer : " + answertf);
                     TF tfData = new TF(question, answertf, points);
-                    obj = new Question(tfData, TrueFalse);
-                    data.add(obj);
+                    questionObject = new Question(tfData, TrueFalse);
+                    data.add(questionObject);
                     break;
                 case MultipleChoice:
                     int ChoiceNumber = Integer.parseInt(br.readLine());
                     String[] choices = new String[ChoiceNumber];
                     int i = 0;
                     char ch = 'A';
-                    while (ChoiceNumber-- > 0) {
+                    while (ChoiceNumber > 0) {
                         choices[i] = ch + ") " + br.readLine();
-                        ch++;
-                        i++;
+                        ch++; i++;
+                        ChoiceNumber--;
                     }
                     String answerMCQ = br.readLine().toUpperCase();
                     logger.info("Answer : " + answerMCQ);
                     MCQ mcqData = new MCQ(question, answerMCQ, choices, points);
-                    obj = new Question(mcqData, MultipleChoice);
-                    data.add(obj);
+                    questionObject = new Question(mcqData, MultipleChoice);
+                    data.add(questionObject);
                     break;
                 case ShortAnswer:
                     String answerSA = br.readLine().toUpperCase();
                     logger.info("Answer : " + answerSA);
                     SA saData = new SA(question, answerSA, points);
-                    obj = new Question(saData, ShortAnswer);
-                    data.add(obj);
+                    questionObject = new Question(saData, ShortAnswer);
+                    data.add(questionObject);
                     break;
                 default:
                     System.out.println("Wrong Choice.");

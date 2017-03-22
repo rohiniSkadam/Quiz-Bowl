@@ -42,8 +42,8 @@ The following k lines will contain each of the possible answers. These answers c
 
 The last line of a multiple choice question will contain a string storing the correct answer.
 This string will be a capital letter corresponding to the correct answer choice. (Since there are at most 9 choices, this will always be either "A", "B", "C", "D", "E", "F", "G", "H", or "I".)
-
-Sample Input File (sample.txt)
+  
+    Sample Input File (sample.txt)
 
 3
 
@@ -78,7 +78,7 @@ What city hosted the 2004 Summer Olympics?
 Athens
 
 
-Sample Program Run (User's answers in bold.)
+    Sample Program Run (User's answers in bold.)
 
 What is your first name?
 
